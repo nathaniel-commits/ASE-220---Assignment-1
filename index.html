@@ -8,7 +8,6 @@
 
     <style>
     :root {
-      --bs-blue: #0d6efd;
       --bs-indigo: #6610f2;
       --bs-purple: #6f42c1;
       --bs-pink: #d63384;
@@ -33,33 +32,47 @@
       --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
       }
-      img {
 
-      }
       body {
-        background-color: var(--bs-gray-dark);
+        background-color: var(--bs-dark);
+        font-family: OCR A Std, --bs-font-monospace;
       }
 
-      h1 {
+      .p-header {
+        margin-top: 25px;
         text-align: center;
-        color: var();
+        color: #991255;
+        text-decoration-line: overline underline;
+        text-decoration-style: wavy;
       }
 
-      p {
-        text-align-last: right;
-        word-wrap: break-word;
+      .intro {
+        font-size: 25px;
+        text-align: justify;
+        color: #000000;
       }
+
+      .emoji {
+        text-align: center;
+      }
+      .bg-primary {
+        width: auto;
+        height: 510px;
+        align-self: center;
+        }
 
     </style>
   </head>
   <body>
     <div>
-      <h1>Who is Nathaniel Marcum? 🤔</h1>
+      <h1 class="p-header">Who is Nathaniel Marcum? </h1>
+      <h1 class="emoji">&#129300;</h1>
+
     </div>
     <br>
-    <div class="badge bg-primary text-wrap" style="width: auto;">
-      <img src="Me.jpg" type="img/jpg" alt="Nate Pic">
-      <p>&emsp;To start off with the basics, my name is Nathaniel Marcum. I'm a junior
+    <div class="bg-primary">
+      <img src="Me.jpg" type="img/jpg" alt="Nate Pic" align="left">
+      <p class="intro">&emsp;To start off with the basics, my name is Nathaniel Marcum. I'm a junior
       Computer Science student and 21 years old. I would say my main two focuses in the field would be
       software development and operating systems, whether it's development, hardware,
       or administration I'm interested in all. I started programming and learning
